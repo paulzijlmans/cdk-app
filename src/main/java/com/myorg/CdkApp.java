@@ -6,11 +6,11 @@ import software.amazon.awscdk.StackProps;
 
 import java.util.Arrays;
 
-public class CdkAppApp {
+public class CdkApp {
     public static void main(final String[] args) {
         App app = new App();
 
-        new CdkAppStack(app, "CdkAppStack", StackProps.builder()
+        new CdkStack(app, "CdkStack", StackProps.builder()
                 // If you don't specify 'env', this stack will be environment-agnostic.
                 // Account/Region-dependent features and context lookups will not work,
                 // but a single synthesized template can be deployed anywhere.
